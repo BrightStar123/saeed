@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang='en-USA'><title> My App !      </title><head><meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style>.slideanim {visibility:hidden;}.slide {animation-name:slide;-webkit-animation-name:slide;animation-duration:2s;-webkit-animation-duration:2s;visibility:visible;}@keyframes slide {0% {opacity:0;transform:translateY(0%);}100% {opacity:1;-webkit-transform:translateY(0%);}}</style></head><body>
+<div class='container'><div class='row'><div class='col-sm-8'><h1> Tooltip Example !</h1><ul class='text-inline'><li><a href='#' data-toggle='tooltip'> I'm the first one !</a></li></ul></div></div>
+<div class='row'><div class="slideanim"><div class='col-lg-6'>
+<h1 class='text text-center  bg-danger'> Hello world</h1><h1 class='text text-center bg-success'> Hello world</h1><h1 class='text text-center bg-warning'> Hello world</h1>
+\<button class='btn btn-danger'> Delete</button>
+</div></div></div><div class="container"><div><button class="btn btn-danger btn-md"> Top</button></div></div><div class='container'><div class='col-sm-8'><h1> Tooltip Example !</h1><ul class='list-inline'><li><a href='#' data-toggle='tooltip'> Hadi is boy !</a><li><a href='#' data-toggle='tooltip'> Hadi is a baby</a><li><a href='#' data-toggle='tooltip'> Hover over me</a><li><a href='#' data-toggle='tooltip'> Hover over me</a></li></ul></div></div>
+<script>$(document).ready(function(){$(window).scroll(function(){$(".slideanim").each(function(){var pos = $(this).offset().top;var winTop = $(window).scrollTop();if(pos<winTop + 600){$(this).addClass("slide");}});});});
+</script><div class="container">  <h3>Tooltip Options</h3>  <p>The <strong>placement</strong> option specifies the tooltip position.</p>  <div>    <button class="btn btn-warning btn-md">Top</button>    <button class="btn btn-success btn-md">Bottom</button>    <button class="btn btn-danger btn-md">Left</button>    <button class="btn btn-primary btn-md">Right</button>  </div></div>
+
+<script>$(document).ready(function(){$(".btn-warning").tooltip({title:"HI, Bushra Khan !", placement:"top"});$(".btn-success").tooltip({title:"Have a fun !",placement:"bottom"});$(".btn-danger").tooltip({title:"Aslam-O-Alykum Hadi !", placement:"left"});$("[data-toggle='tooltip']").tooltip({title:"HI, Bushra Khan !", placement:"right"});$(".btn-primary").tooltip({title:"Mubashir Khan i love my son.He is samrt child.He does'nt listen to me.He goes to school every day. !", placement:"right"});});
+</script>
+
+
+
+</body></html>
